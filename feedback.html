@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <form action="https://sheetdb.io/api/v1/upzillpzxacvg" method="POST" id="feedbackForm" onsubmit="prepareFormData(event)">
+            
+            <label for="username">User Name *:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter Name">
+
+            <label for="email">Email *:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Email">
+
+            <label for="country">Country Code:</label>
+            <select id="country" name="country_code">
+                <option value="">None</option>
+                <option value="+91">India (+91)</option>
+                <option value="+1">USA (+1)</option>
+                <option value="+880">Bangladesh (+880)</option>
+                <option value="+1">Canada (+1)</option>
+                <option value="+61">Australia (+61)</option>
+            </select>
+            
+            <label for="phone">Phone Number *:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter number" pattern="\+?\d{10,15}" title="Please enter a valid phone number">
+
+            <label for="rating">Satisfaction Rating (1-5):</label>
+            <div id="rating">
+                <input type="radio" name="rating" value="1" required>1
+                <input type="radio" name="rating" value="2">2
+                <input type="radio" name="rating" value="3">3
+                <input type="radio" name="rating" value="4">4
+                <input type="radio" name="rating" value="5">5
+            </div>
+
+            <label for="comments">Comments (Optional, max 250 words):</label>
+            <textarea id="comments" name="comments" maxlength="250" rows="4" placeholder="Write your comments here..."></textarea>
+
+            <label for="reason">Reason for feedback:</label>
+            <div id="reason">
+                <input type="checkbox" name="reason" value="Quality"> Quality
+                <input type="checkbox" name="reason" value="Service"> Service
+                <input type="checkbox" name="reason" value="Pricing"> Pricing
+            </div>
+
+            <label for="usertype">User Type:</label>
+            <select id="userType" name="user_type">
+                <option value="new">New User</option>
+                <option value="returning">Returning User</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="thankYouMessage" class="hidden">Thank you for your feedback!</div>
+    </div>
+
+    <script type="text/javascript" src="/script.js"></scripttype></script>
+</body>
+</html>

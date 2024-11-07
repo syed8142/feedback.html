@@ -1,0 +1,61 @@
+body { 
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#ffda,#f2a7b9);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    background: linear-gradient(#ffda,#f2a7b9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;   
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #281e1e;
+    border-radius: 2px;
+}  
+
+.rating {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #38823b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4fc155;
+}
+
+.hidden {
+    display: none;
+}
+
+#thankYouMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+}
+
